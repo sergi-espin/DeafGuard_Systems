@@ -54,7 +54,7 @@ ROOT_URLCONF = 'projecte1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\Users\aleja\Desktop\DeafGuard_Systems\projecte1\projecte1\plantillas'],
+        'DIRS': ['C:/Users/aleja/Desktop/DeafGuard_Systems/projecte1/projecte1/plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
