@@ -6,7 +6,7 @@ app_name = 'account'
 
 urlpatterns = [
     
-    path('login',login,name="login"),
+    path('auth-login.html',login,name="login"),
     path('recover_password',recover_password,name="recover_password"),
     path('register',register,name="register"),
  
