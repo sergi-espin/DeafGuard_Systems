@@ -78,10 +78,18 @@ WSGI_APPLICATION = 'peyso.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'sqlite': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    },
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'usuarios',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',  # O la dirección IP de tu servidor MySQL
+        'PORT': '3306',           # Deja este campo en blanco para usar el puerto predeterminado de MySQL (3306)
+    },
 }
 
 
