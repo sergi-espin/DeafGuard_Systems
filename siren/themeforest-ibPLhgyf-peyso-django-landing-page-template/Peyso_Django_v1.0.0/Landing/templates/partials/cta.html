@@ -2,24 +2,25 @@
 {% block cta %}
 <style>
     .contenedor {
-    position: relative; /* Establece el contenedor como posición relativa */
+    position: relative; 
 }
 
 .contenedor img {
-    position: absolute; /* Establece las imágenes como posición absoluta */
-    top: 0; /* Ajusta la posición superior según sea necesario */
-    left: 0; /* Ajusta la posición izquierda según sea necesario */
-    z-index: 1; /* Ajusta el índice z para superponer la segunda imagen */
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    z-index: 1; 
 }
 #gif{
-    width: 315px;
-    top: 50px;
-    left: 90px;
+    width: 410px;
+    top: 35px;
+    left: 45px;
 }
 .contenedor{
     margin-left: 300px;
     height: 300px;
 }
+
     /* .coche {
         padding: 30px;
         background-color: black;
@@ -58,8 +59,9 @@
  <section class="py-5 bg-primary">
     <div class="container">
         <div class="contenedor">
-            <img src="../../static/images/istockphoto-1486251213-612x612.png" alt="">
+            <div id="fonsBlanc"></div>
             <img id="gif" src="../../static/images/Jo.gif" alt="Superpuesta">
+            <img src="../../static/images/istockphoto-1486251213-612x612.png" alt="">
         </div>
         <!-- <div class="coche">
             <div class="marco-botones">

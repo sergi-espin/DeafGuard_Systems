@@ -22,14 +22,7 @@ from peyso.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
-    path('',layout1,name="layout1"),
-    path('layout-1',layout1,name="layout1"),
-    path('layout-2',layout2,name="layout2"),
-    path('layout-3',layout3,name="layout3"),
-    path('layout-4',layout4,name="layout4"),
-    path('layout-5',layout5,name="layout5"),
-    path('layout-6',layout6,name="layout6"),
+    path('',layout6,name="layout6"),
     
     # account
     path('account/',include('account.urls')),
