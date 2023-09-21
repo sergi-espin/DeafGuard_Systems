@@ -1,7 +1,26 @@
 {% load static %}
 {% block cta %}
 <style>
-    .coche {
+    .contenedor {
+    position: relative; /* Establece el contenedor como posición relativa */
+}
+
+.contenedor img {
+    position: absolute; /* Establece las imágenes como posición absoluta */
+    top: 0; /* Ajusta la posición superior según sea necesario */
+    left: 0; /* Ajusta la posición izquierda según sea necesario */
+    z-index: 1; /* Ajusta el índice z para superponer la segunda imagen */
+}
+#gif{
+    width: 315px;
+    top: 50px;
+    left: 90px;
+}
+.contenedor{
+    margin-left: 300px;
+    height: 300px;
+}
+    /* .coche {
         padding: 30px;
         background-color: black;
         position: relative; 
@@ -33,12 +52,16 @@
         width: 100%;
         background-color: #666;
         margin-bottom: 10px;
-    }
+    } */
 </style>
  <!-- Start cta section -->
  <section class="py-5 bg-primary">
     <div class="container">
-        <div class="coche">
+        <div class="contenedor">
+            <img src="../../static/images/istockphoto-1486251213-612x612.png" alt="">
+            <img id="gif" src="../../static/images/Jo.gif" alt="Superpuesta">
+        </div>
+        <!-- <div class="coche">
             <div class="marco-botones">
                 <div id="rueda"></div>
                 <div class="boton"></div>
@@ -48,8 +71,8 @@
                 <div class="boton"></div>
                 <div class="boton"></div>
             </div>
-            <img src="../../static/images/icon-sensors.gif" alt="GIF animado">
-        </div>
+            <img src="../../static/images/Jo.gif" alt="GIF animado">
+        </div> -->
     </div>
     <!-- end container -->
 </section>
