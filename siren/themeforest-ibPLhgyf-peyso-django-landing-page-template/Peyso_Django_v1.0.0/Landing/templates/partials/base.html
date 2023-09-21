@@ -46,13 +46,15 @@
         {% include "partials/features.html" %}
     {% endblock features %}
     
+    {% block cta %}
+        {% include "partials/cta.html" %}
+    {% endblock cta %}
+
     {% block clients %}
         {% include "partials/clients.html" %}
     {% endblock clients %}
 
-    {% block cta %}
-        {% include "partials/cta.html" %}
-    {% endblock cta %}
+
 
     {% block pricing %}
         {% include "partials/pricing.html" %}
