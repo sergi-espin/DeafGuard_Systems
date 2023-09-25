@@ -8,9 +8,6 @@
                     <div class="icons-lg mb-4">
                         <i class="uim uim-comment-message"></i>
                     </div>
-                    <div id="contenido-api">
-                        <!-- Aquí se mostrarán los datos de la API -->
-                    </div>
                     <h3 class="mb-2">2,200<sup>+</sup></h3>
                     <h3 class="mb-4">Clientes Satisfechos</h3>
                     <p class="text-muted mb-sm-0 mb-5 pb-sm-0 pb-4">
@@ -20,9 +17,8 @@
                     <div class="client-slider">
                         <div>
                             <div class="bg-light rounded p-4">
-                                <p class="text-muted mb-4">
-                                    "El producto cumple con su función básica, pero no destaca en nada. No es malo ni excelente, solo es promedio. Si estás buscando algo económico, podría funcionar para ti."                                </p>
                                 <div class="pt-3">
+                                    <p id="resultado"></p>
                                     <div class="d-inline-block">
                                         <h5 class="font-16 mb-1">James Vazquez</h5>
                                         <span class="text-muted">- Peyso User</span>
@@ -86,7 +82,7 @@
             <!-- end row -->
         </div>
         <!-- end container -->
-        <script src="{% static '../../static/js/opiniones_script.js' %}"></script>
     </section>
     <!-- End Clients -->
+
 {% endblock clients %}
